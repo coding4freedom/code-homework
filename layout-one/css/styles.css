@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    border: 2px solid lightgray;
+    clear: both;
+}
+
+.row-one {
+    height: 200px;
+    width: 33.33%;
+    border: 2px solid lightgray;
+    float: left;
+}
+
+.row-two {
+    height: 300px;
+    width: 50%;
+    border: 2px solid lightgray;
+    float: left;
+}
