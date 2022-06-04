@@ -1,5 +1,27 @@
+//global variable
+var first;
 // target selector
 let turn = document.querySelector('.turn');
+
+// button Event handlers
+document.querySelector('.btn1').addEventListener('click', xNo)
+document.querySelector('.btn2').addEventListener('click', xNo)
+document.querySelector('.btn3').addEventListener('click', xNo)
+document.querySelector('.btn4').addEventListener('click', xNo)
+document.querySelector('.btn5').addEventListener('click', xNo)
+document.querySelector('.btn6').addEventListener('click', xNo)
+document.querySelector('.btn7').addEventListener('click', xNo)
+document.querySelector('.btn8').addEventListener('click', xNo)
+document.querySelector('.btn9').addEventListener('click', xNo)
+
+// event handler function
+function xNo(click){
+    if(first === 'player'){
+        click.target.value = 'X';
+    }else if(first === 'bot'){
+        click.target.value = 'O';
+    }
+}
 
 // logic for which player goes first
 function goFirst(){
@@ -9,8 +31,9 @@ function goFirst(){
 // goFirst function check
 // console.log(goFirst)
 function checkTurn(func){
-    let first;
+    
     let random = func;
+    // display to player who turn it is
     if(random === 'player'){
         first = 'player';
         turn.innerText = 'Player 1 goes first, using X!' 
@@ -24,8 +47,10 @@ function checkTurn(func){
 }
 checkTurn(goFirst());
 
-// display to player who turn it is
+
 // create logic to switch between player and bot
+
+// create bot's logic to select move
 
 
 // create the win condition or draw
