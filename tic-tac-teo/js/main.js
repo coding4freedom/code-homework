@@ -29,6 +29,31 @@ function disableBtn(btn){
     btn.target.disabled = true;
 }
 
+// check win condition
+// check diagonal win
+function checkDiagonal(){
+    if((btn1.value && btn5.value && btn9.value) === "X"
+        || (btn3.value && btn5.value && btn7.value) === "X"){        
+        console.log('it works X')
+    }else if((btn1.value && btn5.value && btn9.value) === "O"
+        || (btn3.value && btn5.value && btn7.value) === "O"){
+        console.log('it works O')  
+    }
+}
+
+// check column win
+function checkColumn(){
+    if((btn1.value && btn4.value && btn7.value) === "X" 
+        || (btn2.value && btn5.value && btn8.value) === "X"
+        || (btn3.value && btn6.value && btn9.value) === "X"){
+        console.log('its column X')
+    }else if((btn1.value && btn4.value && btn7.value) === "O"
+        || (btn2.value && btn5.value && btn8.value) === "O"
+        || (btn3.value && btn6.value && btn9.value) === "O"){
+        console.log('its column O')
+    }
+}
+
 
 // event handler function
 function xNo(click){
@@ -40,6 +65,8 @@ function xNo(click){
         first = 'player'
     }
     disableBtn(click);
+    checkDiagonal();
+    checkColumn();
 }
 function resetGame(){
     window.location.reload();
