@@ -18,8 +18,10 @@ document.querySelector('.btn9').addEventListener('click', xNo)
 function xNo(click){
     if(first === 'player'){
         click.target.value = 'X';
+        first = 'bot'
     }else if(first === 'bot'){
         click.target.value = 'O';
+        first = 'player'
     }
 }
 
@@ -48,7 +50,7 @@ function checkTurn(func){
 checkTurn(goFirst());
 
 
-// create logic to switch between player and bot
+// create logic to switch between player and bot (xNo function handles this now)
 
 // create bot's logic to select move
 
