@@ -2,17 +2,33 @@
 var first;
 // target selector
 let turn = document.querySelector('.turn');
+let btn1 = document.querySelector('.btn1');
+let btn2 = document.querySelector('.btn2');
+let btn3 = document.querySelector('.btn3');
+let btn4 = document.querySelector('.btn4');
+let btn5 = document.querySelector('.btn5');
+let btn6 = document.querySelector('.btn6');
+let btn7 = document.querySelector('.btn7');
+let btn8 = document.querySelector('.btn8');
+let btn9 = document.querySelector('.btn9')
 
 // button Event handlers
-document.querySelector('.btn1').addEventListener('click', xNo)
-document.querySelector('.btn2').addEventListener('click', xNo)
-document.querySelector('.btn3').addEventListener('click', xNo)
-document.querySelector('.btn4').addEventListener('click', xNo)
-document.querySelector('.btn5').addEventListener('click', xNo)
-document.querySelector('.btn6').addEventListener('click', xNo)
-document.querySelector('.btn7').addEventListener('click', xNo)
-document.querySelector('.btn8').addEventListener('click', xNo)
-document.querySelector('.btn9').addEventListener('click', xNo)
+btn1.addEventListener('click', xNo)
+btn2.addEventListener('click', xNo)
+btn3.addEventListener('click', xNo)
+btn4.addEventListener('click', xNo)
+btn5.addEventListener('click', xNo)
+btn6.addEventListener('click', xNo)
+btn7.addEventListener('click', xNo)
+btn8.addEventListener('click', xNo)
+btn9.addEventListener('click', xNo)
+document.querySelector('.btn-reset').addEventListener('click', resetGame)
+
+// disable button onces its selected
+function disableBtn(btn){
+    btn.target.disabled = true;
+}
+
 
 // event handler function
 function xNo(click){
@@ -23,6 +39,10 @@ function xNo(click){
         click.target.value = 'O';
         first = 'player'
     }
+    disableBtn(click);
+}
+function resetGame(){
+    window.location.reload();
 }
 
 // logic for which player goes first
@@ -52,10 +72,12 @@ checkTurn(goFirst());
 
 // create logic to switch between player and bot (xNo function handles this now)
 
+
 // create bot's logic to select move
 
 
 // create the win condition or draw
+// check diagonal
 
 /*
 // class for game (game name, reset btn, greet msg, )
