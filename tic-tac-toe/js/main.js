@@ -32,24 +32,46 @@ function disableBtn(btn){
 // check win condition
 // check diagonal win
 function checkDiagonal(){
-    if((btn1.value && btn5.value && btn9.value) === "X"
-        || (btn3.value && btn5.value && btn7.value) === "X"){        
+    // if((btn1.value === "X") && (btn5.value === "X") && (btn9.value === "X")
+    //     || (btn3.value === "X") && (btn5.value === "X") && (btn7.value === "X")){        
+    //     console.log('it works X')
+    // }else if((btn1.value  === "O") && (btn5.value === "O") && (btn9.value === "O")
+    //     || (btn3.value === "O") && (btn5.value === "O") && (btn7.value === "O")){
+    //     console.log('it works O')  
+    // }
+    if((btn1.value === "X") && (btn5.value == "X") && (btn9.value === "X")){
         console.log('it works X')
-    }else if((btn1.value && btn5.value && btn9.value) === "O"
-        || (btn3.value && btn5.value && btn7.value) === "O"){
-        console.log('it works O')  
+    }else if((btn1.value  === "O") && (btn5.value === "O") && (btn9.value === "O")){
+        console.log('it works O')
+    }else if((btn3.value === "X") && (btn5.value === "X") && (btn7.value === "X")){
+        console.log('it works X')
+    }else if((btn3.value === "O") && (btn5.value === "O") && (btn7.value === "O")){
+        console.log('it works O')
     }
 }
 
 // check column win
 function checkColumn(){
-    if((btn1.value && btn4.value && btn7.value) === "X" 
-        || (btn2.value && btn5.value && btn8.value) === "X"
-        || (btn3.value && btn6.value && btn9.value) === "X"){
+    // if((btn1.value === "X") && (btn4.value === "X") && (btn7.value === "X") 
+    //     || (btn2.value === "X") && (btn5.value === "X") && (btn8.value === "X")
+    //     || (btn3.value === "X") && (btn6.value === "X") && (btn9.value === "X")){
+    //     console.log('its column X')
+    // }else if((btn1.value === "O") && (btn4.value === "O") && (btn7.value === "O")
+    //     || (btn2.value === "O") && (btn5.value === "O") && (btn8.value === "O")
+    //     || (btn3.value === "O") && (btn6.value === "O") && (btn9.value === "O")){
+    //     console.log('its column O')
+    // }
+    if((btn1.value === "X") && (btn4.value === "X") && (btn7.value === "X")){
         console.log('its column X')
-    }else if((btn1.value && btn4.value && btn7.value) === "O"
-        || (btn2.value && btn5.value && btn8.value) === "O"
-        || (btn3.value && btn6.value && btn9.value) === "O"){
+    }else if((btn1.value === "O") && (btn4.value === "O") && (btn7.value === "O")){
+        console.log('its column O')
+    }else if((btn2.value === "X") && (btn5.value === "X") && (btn8.value === "X")){
+        console.log('its column X')
+    }else if((btn2.value === "O") && (btn5.value === "O") && (btn8.value === "O")){
+        console.log('its column O')
+    }else if((btn3.value === "X") && (btn6.value === "X") && (btn9.value === "X")){
+        console.log('its column X')
+    }else if((btn3.value === "O") && (btn6.value === "O") && (btn9.value === "O")){
         console.log('its column O')
     }
 }
