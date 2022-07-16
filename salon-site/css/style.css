@@ -1,3 +1,7 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
 /* Box Model Hack */
 * {
      box-sizing: border-box;
@@ -22,7 +26,7 @@
 /*******************************************/
 
 body {
-
+     font-size: 16px;    
 }
 
 
@@ -30,11 +34,17 @@ body {
 /* LAYOUT
 /*******************************************/
 
+/*  GROUP STYLES */
+header {
+     padding: .5rem 1rem;
+}
+
 /*        Header section  */
 header {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     border-bottom: 3px solid gray;
 }
 nav ul{
      display: flex;
@@ -45,13 +55,22 @@ nav ul{
 /*******************************************/
 
 /* header styles */
+
+header span {
+     font-size: 2rem;
+     font-family: 'Dancing Script', cursive;    
+}
+header button {
+     border: none;
+     background-color: white;
+}
 .toggle-menu {
      width: 50px;
     height: 50px;
     display: block;
     border: none;
     padding: 0px;
-    margin: 20px;
+    margin: 0;
     background: linear-gradient(
       to bottom, 
       #3D0E61, #3D0E61 20%, 
