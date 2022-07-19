@@ -39,15 +39,21 @@ header {
      padding: .5rem 1rem;
 }
 
-/*        Header section  */
+/*        Header section layout*/
 header {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     border-bottom: 3px solid gray;
+     border-bottom: 3px solid gray;     
 }
 nav ul{
      display: flex;
+}
+
+/*        banner section layout */
+.banner-sec {
+     height: 20rem;
+     width: 100vw;     
 }
 
 /******************************************
@@ -90,4 +96,13 @@ header button {
     background-color: #3D0E61;
     padding: 0px 10px;
     box-sizing: border-box;
+}
+
+/* Banner section */
+.banner-sec {
+     background: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+     ), url(../img/clippers.jpg) no-repeat center/100%;  
+     color: white;  
 }
