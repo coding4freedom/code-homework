@@ -1,6 +1,9 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
+/*
+     brown: #bb471e
+*/
 
 /* Box Model Hack */
 * {
@@ -38,6 +41,13 @@ body {
 header {
      padding: .5rem 1rem;
 }
+section {
+     padding-left: 1rem;
+     padding-right: 1rem;
+}
+h2, h3, h4, p {
+     margin: 0;
+}
 
 /*        Header section layout*/
 header {
@@ -46,14 +56,35 @@ header {
      align-items: center;
      border-bottom: 3px solid gray;     
 }
+
 nav ul{
      display: flex;
 }
 
 /*        banner section layout */
 .banner-sec {
-     height: 20rem;
-     width: 100vw;     
+     height: 25rem;
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 1rem 1.5rem;     
+}
+.banner-sec > select {
+     width: 30%;
+}
+.coupon {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;     
+     align-items: center;    
+     border-radius: 5px;
+     margin-top: .5rem;
+     width: 40%;
+     height: 150px;     
+}
+h1 {
+     margin: 0;
 }
 
 /******************************************
@@ -103,6 +134,13 @@ header button {
      background: linear-gradient(
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
-     ), url(../img/clippers.jpg) no-repeat center/100%;  
+     ), url(../img/clippers.jpg) no-repeat center/120%;  
      color: white;  
+}
+.banner-sec > select {
+     background-color: black;
+     color: white;
+}
+.coupon {
+     background-color: black;
 }
