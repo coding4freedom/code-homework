@@ -70,15 +70,18 @@ nav ul{
      justify-content: space-around;
      padding: 1rem 1.5rem;     
 }
-.banner-sec > select {
-     width: 30%;
+.banner-services, .coupon {
+     border-radius: 2px;
+}
+.banner-services{
+     width: 35%;
+     padding: .5rem 1rem;
 }
 .coupon {
      display: flex;
      flex-direction: column;
      justify-content: space-around;     
-     align-items: center;    
-     border-radius: 5px;
+     align-items: center;     
      margin-top: .5rem;
      width: 40%;
      height: 150px;     
@@ -110,11 +113,11 @@ header button {
     margin: 0;
     background: linear-gradient(
       to bottom, 
-      #3D0E61, #3D0E61 20%, 
+      #000509, #000509 20%, 
       white 20%, white 40%, 
-      #3D0E61 40%, #3D0E61 60%, 
+      #000509 40%, #000509 60%, 
       white 60%, white 80%, 
-      #3D0E61 80%, #3D0E61 100%);
+      #000509 80%, #000509 100%);
 }
 
 .toggle-menu nav {
@@ -137,9 +140,12 @@ header button {
      ), url(../img/clippers.jpg) no-repeat center/120%;  
      color: white;  
 }
-.banner-sec > select {
-     background-color: black;
+.banner-sec > span {
+     background-color: black;     
+}
+.banner-services > a{
      color: white;
+     text-decoration: none;
 }
 .coupon {
      background-color: black;
