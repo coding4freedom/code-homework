@@ -106,6 +106,21 @@ h1 {
      width: 50%;
 }
 
+/*        mid-banner section layout */
+.mid-banner {
+     width: 100%;
+     display: flex;
+     padding: 2rem .5rem;
+     gap: 1.5rem;     
+}
+.mid-banner > img {
+     width: 40%;
+     height: auto;
+}
+.mid-banner button {
+     padding: .5rem;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -143,12 +158,12 @@ header button {
     left: -250px;
     width: 200px;
     height: 100%;
-    background-color: #3D0E61;
+    background-color: #000509;
     padding: 0px 10px;
     box-sizing: border-box;
 }
 
-/* Banner section */
+/* Banner section styles*/
 .banner-sec {
      background: linear-gradient(
           rgba(0, 0, 0, 0.3),
@@ -165,4 +180,13 @@ header button {
 }
 .coupon {
      background-color: black;
+}
+
+/*   mid-banner section styles   */
+.mid-banner {
+     background-color: #752c02;
+}
+.mid-banner button {
+     background-color: #000509;
+     color: white;
 }
