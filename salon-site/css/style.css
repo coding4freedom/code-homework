@@ -111,13 +111,19 @@ h1 {
      width: 100%;
      display: flex;
      padding: 2rem .5rem;
-     gap: 1.5rem;     
+     gap: 1rem;         
+}
+.mid-banner > div {
+     display: flex;
+     flex-direction: column;
+     gap: 1.2rem;
 }
 .mid-banner > img {
      width: 40%;
      height: auto;
 }
 .mid-banner button {
+     width: 50%;
      padding: .5rem;
 }
 
@@ -184,7 +190,13 @@ header button {
 
 /*   mid-banner section styles   */
 .mid-banner {
-     background-color: #752c02;
+     background: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+     ),url(../img/wood-floors.jpg) no-repeat center/100%;
+}
+.mid-banner > * {
+     color: white;
 }
 .mid-banner button {
      background-color: #000509;
