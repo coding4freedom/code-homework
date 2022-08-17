@@ -145,6 +145,18 @@ h1 {
 .barb-banner {
      padding: .8rem;    
 }
+/*        barber section layout */
+.deal-sec {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 1.5rem;
+     height: 25rem;
+}
+.deal-sec > button {
+     width: 40%;
+     padding: .5rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -226,4 +238,17 @@ header button {
 .barb-banner {
      background-color: #000509;
      color: white;
+}
+
+/*   deal section styles   */
+.deal-sec {
+     background: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+     ), url(../img/sidecut2.jpg) no-repeat center/120%;
+}
+.deal-sec > button {
+     border: none;
+     color: white;
+     background-color: #000509;
 }
