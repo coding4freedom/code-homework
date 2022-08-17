@@ -247,8 +247,21 @@ header button {
           rgba(0, 0, 0, 0.3)
      ), url(../img/sidecut2.jpg) no-repeat center/120%;
 }
+.deal-sec > span, h3{
+     color: white;
+}
+.deal-sec > span {
+     font-weight: bold;
+}
+.deal-sec > h3 {
+     font-size: 1.5rem;
+}
 .deal-sec > button {
      border: none;
      color: white;
      background-color: #000509;
+}
+.dis {
+     font-weight: bold;
+     color: #000509;
 }
