@@ -158,6 +158,16 @@ h1 {
      padding: .5rem;
 }
 
+/*        cuts section layout */
+.cut-slim {
+     height: 300px;
+     width: 300px;
+}
+.cut-long {
+     height: 550px;
+     width: 300px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
