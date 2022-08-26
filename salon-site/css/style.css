@@ -159,6 +159,23 @@ h1 {
 }
 
 /*        cuts section layout */
+.cuts-sec {
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     padding-top: 2rem;
+     padding-bottom: 2rem;    
+}
+.cuts-sec h3 {
+     padding-bottom: 2rem;
+}
+.cut-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+     padding-bottom: 1rem;
+}
 .cut-slim {
      height: 300px;
      width: 300px;
@@ -273,5 +290,8 @@ header button {
 }
 .dis {
      font-weight: bold;
+     color: #000509;
+}
+.cuts-sec h3 {
      color: #000509;
 }
