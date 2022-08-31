@@ -105,6 +105,10 @@ h1 {
      align-items: center;
      width: 50%;
 }
+.service-icon {
+     height: 100px;
+     width: auto;
+}
 
 /*        mid-banner section layout */
 .mid-banner {
