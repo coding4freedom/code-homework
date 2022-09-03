@@ -189,6 +189,19 @@ h1 {
      width: 300px;
 }
 
+/*        credit section layout */
+.credit {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 1rem;
+}
+.credit button {
+     padding: .5rem 1rem;
+     margin-bottom: .5rem;
+     border-radius: 12px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -298,4 +311,14 @@ header button {
 }
 .cuts-sec h3 {
      color: #000509;
+}
+
+/*   credit section styles   */
+.credit button {
+     color: white;
+     background-color: #000509;
+}
+.credit a {
+     color: #000509;
+     text-decoration: none;
 }
