@@ -156,7 +156,7 @@ h1 {
      margin-bottom: .7rem;
 }
 /*        deal section layout */
-.deal-sec {
+.deal-sec {     
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -255,7 +255,7 @@ header button {
      background: linear-gradient(
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
-     ), url(../img/clippers.jpg) no-repeat center/120%;  
+     ), url(../img/clippers.jpg) no-repeat center;  
      color: white;  
 }
 .banner-sec > span {
@@ -295,7 +295,7 @@ header button {
      background: linear-gradient(
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
-     ), url(../img/sidecut2.jpg) no-repeat center/120%;
+     ), url(../img/sidecut2.jpg) no-repeat center;
 }
 .deal-sec > span, h3{
      color: white;
