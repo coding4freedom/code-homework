@@ -274,7 +274,7 @@ header button {
      background: linear-gradient(
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
-     ),url(../img/wood-floors.jpg) no-repeat center/100%;
+     ),url(../img/wood-floors.jpg) no-repeat center;
 }
 .mid-banner > * {
      color: white;
@@ -327,4 +327,12 @@ header button {
 .credit a {
      color: #000509;
      text-decoration: none;
+}
+
+/**********  Media Queries **************/
+
+@media screen and (min-width: 600px) {
+     .deal-sec {
+          background-size: 100%;
+     }
 }
