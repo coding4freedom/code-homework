@@ -156,6 +156,9 @@ h1 {
 .barb-banner > h3{
      margin-bottom: .7rem;
 }
+.barb-banner > span{
+     font-size: .9rem;
+}
 /*        deal section layout */
 .deal-sec {     
      display: flex;
@@ -168,7 +171,6 @@ h1 {
      width: 40%;
      padding: .5rem;
 }
-
 /*        cuts section layout */
 .cuts-sec {
      display: flex;
@@ -288,6 +290,9 @@ header button {
 /*   barber section styles   */
 .barb-banner {
      background-color: #000509;
+     color: white;
+}
+.barb-banner > h3{
      color: white;
 }
 
