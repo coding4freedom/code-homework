@@ -74,7 +74,7 @@ nav ul{
      border-radius: 2px;
 }
 .banner-services{
-     width: 35%;
+     width: 30%;     
      padding: .5rem 1rem;
 }
 .coupon {
@@ -343,7 +343,40 @@ header button {
      }
 }
 
+@media screen and (min-width: 650px) {
+     .banner-services {
+          width: 28%;
+     }
+     .coupon {
+          width: 38%;
+     }
+}
+
+@media screen and (min-width: 700px) {
+     .banner-services {
+          width: 25%;
+     }
+     .coupon {
+          width: 34%;
+     }
+}
+
+@media screen and (min-width: 750px) {
+     .banner-services {
+          width: 22%;
+     }
+     .coupon {
+          width: 32%;
+     }
+}
+
 @media screen and (min-width: 850px) {
+     .banner-services {
+          width: 20%;
+     }
+     .coupon {
+          width: 30%;
+     }
      .services {
           width: 65%;          
           flex-direction: row;
