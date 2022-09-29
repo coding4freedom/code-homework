@@ -386,4 +386,14 @@ header button {
      .deal-sec {
           margin: 0 3rem;
      }
+     .cuts-sec {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+     }
+     .cuts-sec > div:first-child {
+          width: 100%;
+          margin-left: 45%;
+     }
 }
