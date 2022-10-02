@@ -75,7 +75,7 @@ nav ul{
 }
 .banner-services{
      width: 30%;     
-     padding: .5rem 1rem;
+     padding: .8rem 1rem;
 }
 .coupon {
      display: flex;
@@ -83,8 +83,15 @@ nav ul{
      justify-content: space-around;     
      align-items: center;     
      margin-top: .5rem;
+     padding: 1.5rem 0;
      width: 40%;
-     height: 150px;     
+     height: 175px;     
+}
+.coupon-sp {
+     padding: .2rem 0 .8rem 0;    
+}
+.coupon-sp > span {
+     font-size: 1.4rem;
 }
 h1 {
      margin: 0;
@@ -368,6 +375,11 @@ header button {
      .coupon {
           width: 32%;
      }
+     .barber { 
+          margin: 5rem;
+          justify-content: center;         
+          flex-direction: row;
+     }
 }
 
 @media screen and (min-width: 850px) {
@@ -383,6 +395,10 @@ header button {
           flex-wrap: wrap;
           margin: 0  20%;
      }
+     .mid-banner {
+          padding-left: 3rem;
+          padding-right: 3rem;
+     }     
      .deal-sec {
           margin: 0 3rem;
      }
