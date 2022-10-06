@@ -413,3 +413,14 @@ header button {
           margin-left: 45%;
      }
 }
+
+@media screen and (min-width: 1050px){
+     .services {
+          width: 100%;
+          margin: 2.5rem 0;
+          justify-content: center;
+     }
+     .services > div {          
+          width: 25%;
+     }     
+}
