@@ -415,6 +415,12 @@ header button {
 }
 
 @media screen and (min-width: 1050px){
+     .toggle-menu {
+          display: none;
+     }
+     .menu {
+          display: inline;
+     }
      .services {
           width: 100%;
           margin: 2.5rem 0;
